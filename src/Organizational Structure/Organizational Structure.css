@@ -1,0 +1,91 @@
+.OrganizationalStructure {
+    background-color: #f8f8f8;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: unset !important;
+    color: black !important;
+}
+p {
+    font-size: 15px;
+}
+
+.profile-img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.chairman-card  {
+    padding: 3% !important;
+}
+.chairman-card-data  {
+    margin-inline-start : 25p;
+}
+.person-name {
+    font-weight: 700;
+    margin: 2px 0px;
+}
+.person-position {
+    color: #676767;
+    font-size: 14px;
+}
+
+
+.person-name {
+    color: #676767;
+    font-size: 15px;
+    font-weight: 700;
+}
+.person-position {
+    font-size: 14px
+}
+
+#chairman-popup,
+#boards-popup {
+    height: auto;
+    background-color: #ffe738;
+    padding: 100px 0px;
+    display: block;
+}
+.board-title {
+    color: #2866a0;
+}
+.person-card {
+    text-align: center;
+}
+.close-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #2866a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.desc {
+    color: #2866a0ba;
+}
+
+.boards-popup-table {
+    width: 100%;
+    color: #2866a0;
+    font-size: 15px;
+}
+.boards-popup-table th {
+    color: black;
+    padding: 8px 0px;
+}
+
+.boards-popup-table td {
+    padding: 4px 0px;
+}
+
+.active {
+    background-color: blue ;
+    display: block ;
+}
