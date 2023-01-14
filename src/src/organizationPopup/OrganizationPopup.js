@@ -27,16 +27,21 @@ function OrganizationalPopup(props) {
       });
   }, [localStorage.getItem("token")]);
 
-  const chaeckEmpty = (string) => (string == "" ? "-" : string);
+  const chaeckEmpty = (string) => (string === "" ? "-" : string);
 
-  const handelClose = () => console.log("ssss");
+  const handelClose = () => {
+    document.querySelector(".popup-body").style.display = "none";
+  };
+  if (props.id) {
+    document.querySelector(".popup-body").style.display = "block";
+  }
 
   return (
-    <>
+    <div className="popup-body">
       <div
         className="chairman-popup"
         id="chairman-popup"
-        style={{ display: props.id == "profile-img" ? "block" : "none" }}
+        style={{ display: props.id === "profile-img" ? "block" : "none" }}
       >
         <div className="container">
           <h3 className="board-title d-flex justify-content-between align-items-center">
@@ -181,7 +186,7 @@ function OrganizationalPopup(props) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default OrganizationalPopup;
