@@ -11,7 +11,8 @@ p {
     font-size: 15px;
 }
 
-.profile-img {
+.profile-img,
+.board-img {
     height: 140px;
     width: 140px;
     border-radius: 50%;
